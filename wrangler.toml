@@ -1,0 +1,12 @@
+# wrangler.toml
+name = "netease-cloud-music-api"
+main = "src/index.js"
+compatibility_date = "2024-03-21"
+
+[build]
+command = "yarn install && yarn build"
+
+# 如需 KV 存储
+kv_namespaces = [
+  { binding = "CACHE", id = "xxxxxxx" }
+]
